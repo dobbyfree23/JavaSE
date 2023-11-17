@@ -21,9 +21,7 @@ public class Operator08 {
 		}
 		
 		System.out.println("result2: " + result2);
-		
 	}
-
 }
 
 
