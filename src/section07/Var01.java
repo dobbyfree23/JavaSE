@@ -33,21 +33,24 @@ package section07;
 public class Var01 {
 	
 	// 전역변수
-	static int globalVar;
+	int globalVar;
 	
 	public static void localMethod() {
 		// 지역변수 선언
 		int localVar = 20;
-		System.out.println("전역변수 호출하기: " + globalVar);
+		
+		Car car2 = new Car();
+		
+		System.out.println("전역변수 호출하기: " + car2.model);
 		System.out.println("지역변수 호출하기: " + localVar);
 	}
 	
 	public static void main(String[] args) {
+		Var01 var01 = new Var01();
 		
-		System.out.println("전역변수 호출하기: " + globalVar);
+		System.out.println("전역변수 호출하기: " + var01.globalVar);
 		// System.out.println("지역변수 호출하기: " + localVar);
 		localMethod();
-		
 	}
 
 }
