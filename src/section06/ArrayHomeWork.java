@@ -66,7 +66,7 @@ public class ArrayHomeWork {
 	
 	public static void main(String[] args) {
 		
-		int array[][] = new int[7][7];
+		int[][] array = new int[7][7];
 		
 		for(int i = 0; i < 7; i++) {
 			for(int j = 0; j < 7; j++) {
