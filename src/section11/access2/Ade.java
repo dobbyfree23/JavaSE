@@ -2,7 +2,7 @@ package section11.access2;
 
 public class Ade extends Drink {
 	
-	private boolean isZero;
+	public boolean isZero;
 	
 	public Ade() {
 		name = "코카콜라";

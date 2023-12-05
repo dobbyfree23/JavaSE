@@ -1,4 +1,11 @@
 package section11;
+/*
+ * ***** instanceof 연산자
+ * 	객체가 특정 클래스 또는 인터페이스의 인스턴스인지 여부를 확인하는 연산자
+ * 
+ * 
+ * 
+ */
 
 import java.util.Scanner;
 
@@ -25,7 +32,14 @@ public class Polymorphism03 {
 			if(inputNum == 0) break;
 			
 			Drink drink = getDrink(inputNum);
-			drink.printInfo();
+			
+			if(drink instanceof Ade) {
+				Ade ade = (Ade) drink;
+				System.out.println("제로콜라 입니까? " + ade.isZero);
+			} else if(drink instanceof Coffee) {
+				Coffee coffee = (Coffee) drink;
+				System.out.println("디카페인 입니까? " + coffee.isDecaf);
+			}
 			
 			System.out.println();
 			
@@ -44,7 +58,6 @@ public class Polymorphism03 {
 		return drink;
 		
 	}
-	
 
 }
 
