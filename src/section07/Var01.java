@@ -32,11 +32,11 @@ package section07;
  */
 public class Var01 {
 	
-	// 전역변수
+	// 기본형/전역변수/동적
 	int globalVar;
 	
 	public static void localMethod() {
-		// 지역변수 선언
+		// 기본형/지역변수 선언
 		int localVar = 20;
 		
 		Car car2 = new Car();
@@ -46,6 +46,7 @@ public class Var01 {
 	}
 	
 	public static void main(String[] args) {
+		// 참조형/지역변수
 		Var01 var01 = new Var01();
 		
 		System.out.println("전역변수 호출하기: " + var01.globalVar);
