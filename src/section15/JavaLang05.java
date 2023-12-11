@@ -66,7 +66,7 @@ public class JavaLang05 {
 		// 공백제거2
 		String str13 = "     java java java     ";
 		String replace2 = str13.replace(" ", "");
-		System.out.println("replace2: " + replace);
+		System.out.println("replace2: " + replace2);
 		
 		// 문자비교
 		String str14 = "A";
