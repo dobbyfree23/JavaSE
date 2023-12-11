@@ -48,15 +48,37 @@ public class JavaLang05 {
 		String substring = str9.substring(0, 2);
 		System.out.println("substring: " + substring);
 		
-		
 		// 소문자 변환
 		String str10 = "abcDEF";
 		String toLowerCase = str10.toLowerCase();
 		System.out.println("toLowerCase: " + toLowerCase);
 		
+		// 대문자 변환
+		String str11 = "abcDEF";
+		String toUpperCase = str11.toUpperCase();
+		System.out.println("toUpperCase: " + toUpperCase);
 		
+		// 공백제거
+		String str12 = "     java java java     ";
+		String trim = str12.trim();
+		System.out.println("trim: " + trim);
 		
+		// 공백제거2
+		String str13 = "     java java java     ";
+		String replace2 = str13.replace(" ", "");
+		System.out.println("replace2: " + replace);
 		
+		// 문자비교
+		String str14 = "A";
+		String str15 = "B";
+		int compareTo = str14.compareTo(str15);
+		System.out.println("compareTo: " + compareTo);
+		
+		// 문자 포함여부
+		String str16 = "abcd";
+		String str17 = "cd";
+		boolean contains = str16.contains(str17);
+		System.out.println("contains: " + contains);
 		
 		
 	}
