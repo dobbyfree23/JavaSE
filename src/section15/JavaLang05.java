@@ -1,4 +1,7 @@
 package section15;
+
+import java.util.Arrays;
+
 /*
  * String 메서드
  * 
@@ -18,7 +21,7 @@ public class JavaLang05 {
 		
 		// 문자열 마지막에 지정한 문자가 있는지 판단
 		String str3 = "text";
-		boolean endsWith = str3.endsWith(str3);
+		boolean endsWith = str3.endsWith("t");
 		System.out.println("endsWith: " + endsWith);
 		
 		// 문자 인덱스번호 반환
@@ -42,6 +45,8 @@ public class JavaLang05 {
 		for(String split : splitArr) {
 			System.out.println(split);
 		}
+		
+		System.out.println(Arrays.toString(splitArr));
 		
 		// 문자열 절삭
 		String str9 = "abcDEF";
@@ -69,8 +74,8 @@ public class JavaLang05 {
 		System.out.println("replace2: " + replace2);
 		
 		// 문자비교
-		String str14 = "A";
-		String str15 = "B";
+		String str14 = "C";
+		String str15 = "A";
 		int compareTo = str14.compareTo(str15);
 		System.out.println("compareTo: " + compareTo);
 		
@@ -79,7 +84,6 @@ public class JavaLang05 {
 		String str17 = "cd";
 		boolean contains = str16.contains(str17);
 		System.out.println("contains: " + contains);
-		
 		
 	}
 
