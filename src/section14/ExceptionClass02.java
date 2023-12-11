@@ -9,11 +9,13 @@ public class ExceptionClass02 {
 		int num1 = 20;
 		int num2 = 10;
 		int result = 0;
+		System.out.println("str 첫번째 글자: " + str.charAt(0));
 		
 		try {
 			result = num1 / num2;
 			System.out.println("result: " + result);
 			
+			System.out.println("str 첫번째 글자: " + str.charAt(0));
 			System.out.println("str 첫번째 글자: " + str.charAt(0));
 			
 		} catch(ArithmeticException ae) {

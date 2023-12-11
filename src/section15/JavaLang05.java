@@ -1,0 +1,77 @@
+package section15;
+/*
+ * String 메서드
+ * 
+ */
+public class JavaLang05 {
+	
+	public static void main(String[] args) {
+		
+		// 문자열 길이 length
+		String str1 = "ABCDEFGHIJK";
+		System.out.println("length: " + str1.length());
+		
+		// 문자열이 지정한 문자로 시작하는지 판탄
+		String str2 = "apple";
+		boolean startsWith = str2.startsWith("a");
+		System.out.println("startsWith: " + startsWith);
+		
+		// 문자열 마지막에 지정한 문자가 있는지 판단
+		String str3 = "text";
+		boolean endsWith = str3.endsWith(str3);
+		System.out.println("endsWith: " + endsWith);
+		
+		// 문자 인덱스번호 반환
+		String str4 = "abcdef";
+		int indexOf = str4.indexOf("d");
+		System.out.println("IndexOf: " + indexOf);
+		
+		// 문자열에 지정한 문자가 마지막 몇번째 있는지 int로 반환
+		String str5 = "AndroidApp";
+		int lastIndexOf = str5.lastIndexOf("A");
+		System.out.println("lastIndexOf: " + lastIndexOf);
+		
+		// 문자열 치환
+		String str6 = "A*B*C*D";
+		String replace = str6.replace("*", "-");
+		System.out.println("replace: " + replace);
+		
+		// 문자열 나누기 배열로 반환
+		String str8 = "A:B:C:D:E:F:G:abcdefg";
+		String[] splitArr = str8.split(":");
+		for(String split : splitArr) {
+			System.out.println(split);
+		}
+		
+		// 문자열 절삭
+		String str9 = "abcDEF";
+		String substring = str9.substring(0, 2);
+		System.out.println("substring: " + substring);
+		
+		
+		// 소문자 변환
+		String str10 = "abcDEF";
+		String toLowerCase = str10.toLowerCase();
+		System.out.println("toLowerCase: " + toLowerCase);
+		
+		
+		
+		
+		
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

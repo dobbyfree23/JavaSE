@@ -31,6 +31,17 @@ public class JavaLang03 {
 		System.out.println("str2: " + System.identityHashCode(str2));
 		System.out.println("str3: " + System.identityHashCode(str3));
 		
+		
+		
+		String strTest = "TEST";
+		strTest += "1";	
+		strTest += "2";
+		strTest += "3";
+		strTest += "4";
+		strTest += "5";
+		System.out.println(strTest);
+		
+		
 	}
 
 }
