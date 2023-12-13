@@ -38,11 +38,8 @@ public class JavaUtil05 {
 			}
 			
 			week++;
-			
 		}
-		
 		scan.close();
-		
 	}
 
 }
