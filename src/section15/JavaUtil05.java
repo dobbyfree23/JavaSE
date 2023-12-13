@@ -16,6 +16,7 @@ public class JavaUtil05 {
 		System.out.println("월을 입력하세요");
 		int month = scan.nextInt();
 		
+		cal.set(year, month - 1, 1);
 		
 		System.out.println("일\t월\t화\t수\t목\t금\t토");
 		
