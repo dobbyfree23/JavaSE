@@ -16,7 +16,7 @@ public class JavaUtil02 {
 		Random ran = new Random();
 		for(int i = 0; i < iArray.length; i++) {
 			
-			int cIndex = ran.nextInt(45);
+			int cIndex = ran.nextInt(45);	// 0 ~ 44 중 난수값생성
 			
 			int tmp = iArray[i];
 			iArray[i] = iArray[cIndex];
