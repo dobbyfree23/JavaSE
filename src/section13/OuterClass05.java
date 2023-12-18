@@ -1,6 +1,5 @@
 package section13;
 
-import section11.access1.Car;
 import section13.access1.Bird;
 
 /*
@@ -29,7 +28,6 @@ public class OuterClass05 {
 				System.out.println("Hello, Bird!");
 			}
 		};
-		
 		
 		bird.sing();
 		bird.fly();
