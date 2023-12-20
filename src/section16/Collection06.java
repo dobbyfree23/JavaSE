@@ -2,6 +2,29 @@ package section16;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+
+
+class ResultVO {
+	private String name;
+	private String address;
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	
+}
+
 
 public class Collection06 {
 	
@@ -34,9 +57,18 @@ public class Collection06 {
 			
 			System.out.println(no+"\t"+name+"\t"+mobile+"\t"+address);
 		}
-				
+		
+		
+		List<ResultVO> resultList 
+					= memberList.stream()
+								.map(m -> {
+									ResultVO resultVO = new ResultVO();
+									resultVO.setName(m.getName());
+									resultVO.setAddress(m.getAddress());
+									return resultVO;
+								})
+								.collect(Collectors.toList());
 	}
-
 }
 
 
