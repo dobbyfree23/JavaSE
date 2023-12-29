@@ -26,7 +26,7 @@ public class JDBC05 {
 					+ "WHERE id = ?"
 					);
 			
-			pstmt.setInt(1, 1);
+			pstmt.setInt(1, 2);
 			
 			int reuslt = pstmt.executeUpdate();
 			if(reuslt > 0) {

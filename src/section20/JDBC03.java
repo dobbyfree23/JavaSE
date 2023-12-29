@@ -8,6 +8,20 @@ AS (
     FROM employees 
     WHERE 1 = 2
 );
+
+
+-- 테이블생성!
+CREATE TABLE sales_reps (
+    id NUMBER(6) PRIMARY KEY ,
+    name VARCHAR2(20),
+    salary NUMBER(8,2),
+    commission_pct NUMBER(2,2)
+);
+COMMENT ON COLUMN sales_reps.id IS '아이디';
+COMMENT ON COLUMN sales_reps.name IS '이름';
+COMMENT ON COLUMN sales_reps.salary IS '급여';
+COMMENT ON COLUMN sales_reps.commission_pct IS '커미션';
+
  
  */
 
@@ -37,7 +51,7 @@ public class JDBC03 {
 			// 4. PreaparedStatement 객체 생성
 			pstmt = conn.prepareStatement(sql.toString());
 			
-			pstmt.setInt(1, 1);
+			pstmt.setInt(1, 2);
 			pstmt.setString(2, "피카츄");
 			pstmt.setDouble(3, 200);
 			pstmt.setDouble(4, 0.2);
@@ -51,8 +65,6 @@ public class JDBC03 {
 			} else {
 				System.out.println("데이터 추가 실패!!");
 			}
-			
-			
 			
 		} catch (Exception e) {
 			e.printStackTrace();

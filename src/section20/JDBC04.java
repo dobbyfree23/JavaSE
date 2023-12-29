@@ -1,4 +1,10 @@
 package section20;
+/* 여러줄 주석
+UPDATE 테이블명 SET
+컬럼명 = 수정데이터
+WHERE  조건
+
+*/
 
 import java.sql.Connection;
 import java.sql.DriverManager;
